@@ -9,21 +9,16 @@
     transform: scale(1, 0.9);
 }
 
-.test{
-	position:relative;
-	content:url("image/test.jpg");
-	top: 0px;
-	left: 0;
-	z-index: -2;
-	width: 100%;
-	max-height: 650px;
+.titre{
+	text-align: center;
 }
 
 .logo{
 	position: absolute;
-	left: 10px;
-	width: 150px;
-	height: 200px;
+	left: 4%;
+	width: 40%;
+	height: 90%;
+
 }
 
 .container {
@@ -171,7 +166,7 @@ main{
 	position: relative;
     width: 1000px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 85px;
 }
 
 .articleu{
@@ -184,6 +179,14 @@ main{
   	box-shadow: 0 0 6px 0 rgb(0 0 0 / 15%);
 }
 
+.articleu>.introduction{
+	display: flex;
+	vertical-align: center;
+}
+
+.articleu>.summary{
+	display: block;
+}
 
 
 .mbas{
@@ -197,18 +200,23 @@ h2{
     text-align: center;
     padding:20px;
 }
+h4{
+	text-align: center;
+}
 
 p{
     display: block;
     line-height: 150%;
+	font-size: small;
     text-indent:20px;
     margin: 30px 0;
-    padding: 5px 10px;
     overflow: auto;
+	width: 100%;
+	text-align:justify;
 }
 
 h3{
-    display:inline-block;
+	text-align: center;
     font-family: "Figerona-VF";
     padding: 5px 10px 0;
     background-color: white;
@@ -216,28 +224,45 @@ h3{
     border-radius: 10px
 }
 
-
 img{
-    display: block;
-    width:70%;
-    height: 70%;
-    margin-left: auto;
-    margin-right: auto;
+	width:100%;
+	border-radius: 10px
+	
 }
 
+.imgContainer{
+	padding: 2%;
+}
+
+.subSummary{
+	display: flex;
+}
+.memoire, .histoire, .menace{
+	width:33%;
+	margin: 5px;
+	display: inline;
+}
+.subSummary>div{
+	border-right: 3px dotted #CCCCCC;
+	border-left: 3px dotted #CCCCCC;
+
+}
 footer{
     position: relative;
     left: 0px;
     width: 100%;
     margin-top: 40px;
-    height: 15em;
+    height: 11em;
     background-color: black;
     overflow: auto;
+}
+footer a{
+	justify-content: center;
 }
 
 footer>div{
 	display: flex;
-	justify-content: right;
+	justify-content: center;
 	color:white;
 	flex-direction: row;
 	margin: 0 20px;
@@ -247,6 +272,7 @@ footer>div{
 footer>div>div{
 	display: flex;
 	width: 200px;
+	justify-content: center;
 	height: 70%;
 	margin-top:25px;
 	flex-direction: column;
@@ -263,11 +289,13 @@ footer ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	margin-top:9px;
+	margin-top:10%;
 }
 
 footer li{
-	margin-top: 5px;
+	margin: 2px;
+	text-align: center;
+	
 }
 
 footer a{
@@ -334,6 +362,9 @@ textarea {
 }
 
 @media (max-width:1000px){
+	.articleu>.introduction{
+		display: block;
+	}
 
 	.logo{
 		display:none;
@@ -394,3 +425,4 @@ textarea {
     .burger div>a:hover{
     	background-color:#5B5B5B; 
     }
+}
