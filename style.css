@@ -285,7 +285,6 @@ footer>div{
 footer>div>div{
 	display: flex;
 	width: 200px;
-	justify-content: center;
 	height: 70%;
 	margin-top:25px;
 	flex-direction: column;
