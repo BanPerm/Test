@@ -243,6 +243,9 @@ p{
 	width: 100%;
 	text-align:justify;
 }
+li{
+	font-size: small;
+}
 
 .ulmemoire>li{
 	padding-top:10px; 
@@ -425,6 +428,9 @@ textarea {
     p{
     	font-size: small;
     }
+	li{
+		font-size: small;
+	}
 
     .burger{
         display:flex;
